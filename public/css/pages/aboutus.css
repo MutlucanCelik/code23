@@ -1,0 +1,97 @@
+#aboutus {
+  min-height: 100vh;
+  background-image: url("../../img/code23.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.aboutus__content {
+  padding: 10rem 4rem 2rem 4rem;
+}
+.aboutus__content h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-secondary);
+  letter-spacing: 1.5px;
+}
+.aboutus__content p {
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+#trainers {
+  padding: 4rem 2rem;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  row-gap: 100px;
+}
+
+.trainers__trainer {
+  width: 17%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.trainers__image-container {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 1rem;
+}
+.trainers__trainer img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+.trainers__trainer h5 {
+  font-size: 1rem;
+  line-height: 1.3rem;
+}
+@media only screen and (max-width: 1024px) {
+  .aboutus__content {
+    padding: 10rem 2rem 2rem 2rem;
+  }
+  #trainers {
+    padding: 4rem 1rem;
+    column-gap: 20px;
+    row-gap: 80px;
+  }
+
+  .trainers__trainer {
+    width: 22%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  #trainers {
+    row-gap: 120px;
+  }
+  .trainers__trainer {
+    width: 30%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  #trainers {
+    row-gap: 120px;
+  }
+  .trainers__trainer {
+    width: 45%;
+  }
+  .aboutus__content h3 {
+    font-size: 2.3rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  #trainers {
+    row-gap: 90px;
+  }
+  .trainers__trainer {
+    width: 45%;
+  }
+  .aboutus__content h3 {
+    font-size: 2rem;
+  }
+}

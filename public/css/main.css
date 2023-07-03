@@ -1,0 +1,14 @@
+@import "./base/base.css";
+@import "./colors/main-color.css";
+
+@import "./components/navigations.css";
+@import "./components/footer.css";
+
+@import "./pages/index.css";
+@import "./pages/aboutus.css";
+@import "./pages/educations.css";
+@import "./pages/contact.css";
+@import "./pages/news.css";
+@import "./pages/news-details.css";
+@import "./pages/education-detail.css";
+@import "./pages/register.css";

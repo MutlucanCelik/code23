@@ -1,0 +1,124 @@
+#education-detail {
+  margin-bottom: 1rem;
+}
+.education-detail__top {
+  height: 300px;
+  margin-bottom: 4rem;
+  background-image: url("../../img/code23.jpeg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: end;
+}
+.education-detail__top h1 {
+  margin-left: 70px;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: var(--color-secondary);
+}
+.education-detail__bot {
+  padding: 0 4rem;
+}
+.education-detail__img-container {
+  width: 100%;
+  height: 450px;
+  padding: 0 5rem;
+}
+.education-detail__img-container img {
+  width: 100%;
+  height: 100%;
+}
+.education-detail__content-container {
+  padding: 0 3rem 0 0;
+  font-size: 1.2rem;
+}
+.education-detail__content-header {
+  margin: 2rem 0;
+  padding: 1rem 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  letter-spacing: 1px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.education-detail__other-education ul {
+  height: 1100px;
+  padding: 0 1rem 0 0;
+  overflow-y: scroll;
+}
+.education-detail__other-education ul::-webkit-scrollbar {
+  width: 4px; /* scrollbar genişliği */
+}
+
+/* Handle */
+.education-detail__other-education ul::-webkit-scrollbar-thumb {
+  background-color: #888; /* scrollbar rengi */
+  border-radius: 4px; /* scrollbar kenar yarıçapı */
+}
+
+/* Handle üzerine gelindiğinde */
+.education-detail__other-education ul::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* hover durumunda scrollbar rengi */
+}
+.education-detail__other-education img {
+  width: 100px;
+  margin-right: 1rem;
+}
+
+.education-detail__other-education li {
+  padding: 1rem 0;
+  border-bottom: 1px solid #b9b5b5;
+}
+.education-detail__other-education li:nth-child(1) {
+  border-top: 1px solid #b9b5b5;
+}
+.education-detail__other-education h3 {
+  color: var(--color-secondary);
+}
+.education-detail__other-education h4 {
+  font-size: 1.2rem;
+  margin-top: 8px;
+}
+
+@media only screen and (max-width: 992px) {
+  .education-detail__top h1 {
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-size: 2.2rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .education-detail__bot {
+    padding: 0 2rem;
+  }
+  .education-detail__other-education {
+    margin-top: 5rem;
+  }
+  .education-detail__content-container {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .education-detail__img-container {
+    padding: 0 2rem;
+  }
+  .education-detail__top h1 {
+    font-size: 2rem;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+  .education-detail__top {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .education-detail__img-container {
+    padding: 0 0rem;
+  }
+  .education-detail__top h1 {
+    font-size: 1.9rem;
+  }
+}

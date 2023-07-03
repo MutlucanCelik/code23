@@ -1,0 +1,114 @@
+#courses {
+  min-height: 100vh;
+  margin-bottom: 4rem;
+}
+.courses__top {
+  height: 300px;
+  background-image: url("../../img/code23.jpeg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  align-items: end;
+}
+.courses__top h1 {
+  margin-left: 70px;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+  color: var(--color-secondary);
+}
+.courses__bot {
+  margin-top: 6rem;
+}
+.courses__course-card-container {
+  display: block;
+  margin: 2rem 3rem;
+}
+.courses__course-card {
+  height: 500px;
+  border-radius: 1.3rem;
+  overflow: hidden;
+  border: 7px solid #a7a2a2;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  position: relative;
+}
+.courses__course-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+
+  transition: all 0.5s;
+}
+.courses__course-curtain {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.courses__course-card-container:hover .courses__course-card img {
+  transform: scale(1.2);
+}
+.courses__card-content {
+  padding: 0.5rem;
+  position: absolute;
+  top: 1.5rem;
+  left: 1rem;
+  z-index: 3;
+  color: #fff;
+}
+.courses__card-content h2 {
+  font-size: 2rem;
+  font-weight: 300 !important;
+  margin-bottom: 1.5rem;
+}
+.courses__card-content p {
+  font-size: 1.15rem;
+  line-height: 2rem;
+  letter-spacing: 0.5px;
+}
+
+@media only screen and (max-width: 1360px) {
+  .courses__course-card-container {
+    margin: 2rem 1rem;
+  }
+  .courses__top h1 {
+    margin-left: 55px;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .courses__card-content p {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .courses__course-card-container {
+    margin: 2rem 0rem;
+  }
+  .courses__card-content h2 {
+    font-size: 1.8rem;
+  }
+  .courses__card-content p {
+    font-size: 1.1rem;
+  }
+  .courses__top h1 {
+    margin-left: 15px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .courses__top h1 {
+    font-size: 2.2rem;
+  }
+  .courses__top {
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .courses__course-card-container {
+    margin: 2rem 0rem;
+  }
+}
